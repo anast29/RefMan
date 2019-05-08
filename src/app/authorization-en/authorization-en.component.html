@@ -1,0 +1,103 @@
+<section id="main">
+  <div id="form" >
+    <input type="radio" name="odin" checked="checked" id="sign_in"/>
+    <label for="sign_in">Sign in</label>
+    <input type="radio" name="odin" id="sign_up"/>
+    <label for="sign_up">Sign up</label>
+    <div class="form_content">
+      <div id="body">
+        <div id="error">
+          <span>Неправильна електронна адреса та/чи пароль</span>
+          <button type="button" onclick="document.getElementById('error').style.display='none';"><i class="fas fa-times"></i></button>
+        </div>
+        <form #myForm="ngForm" novalidate>
+          <div class="form-group">
+            <img src="../../assets/img/man.png" id="img_sign"/>
+            <p>Enter email address</p>
+            <input type="email" class="form-control" name="email" id="email"
+                   [(ngModel)]="authorization.email" title="email" #email="ngModel" required
+                   pattern="[a-zA-Z_]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}">
+            <img src="../../assets/img/letter.png" class="log">
+            <div *ngIf="email.invalid && email.dirty && email.touched" class="alert alert-danger error-email">
+              No valid email address
+            </div>
+            <!--value="{{authorization?.email}}-->
+            <p>Enter password</p>
+            <input type="password" class="form-control" name="password" id="passw"
+                   [(ngModel)]="authorization.password" title="password">
+            <img src="../../assets/img/lock.png" class="log">
+          </div>
+          <div class="form-group">
+            <input class="btn btn-default" type="submit" value="Sign in" [disabled]="myForm.invalid" (click)="submitAuthorization(authorization)">
+            <!--"(click)="submit(authorization)-->
+            <i class="fa fa-arrow-right"></i>
+            <a>Forgot password?</a>
+          </div>
+        </form>
+      </div>
+      <div id="footer">
+        <p>Not registered yet? <a href="#body_signup"> Sign up </a></p>
+      </div>
+    </div>
+    <div class="form_content">
+      <div id="body_signup">
+        <img src="../../assets/img/signup.png"/>
+        <form #myForm="ngForm" novalidate>
+          <div class="form-group">
+            <p>Enter email address</p>
+            <input type="email" class="form-control" name="email_signup" id="email_signup" #email_signup="ngModel"
+                   [(ngModel)]="registration.email_signup"
+                   required pattern="[a-zA-Z_]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}">
+            <div *ngIf="email_signup.invalid && email_signup.dirty && email_signup.touched" class="alert alert-danger error-signup">
+              <i class="fa fa-times"></i>
+            </div>
+            <div *ngIf="email_signup.valid && email_signup.dirty && email_signup.touched" class="alert alert-danger error-signup">
+              <i class="fa fa-check"></i>
+            </div>
+
+            <p>Enter password</p>
+            <input type="password" class="form-control" name="password_signup" id="password_signup" required #password_signup="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                   [(ngModel)]="registration.password_signup" >
+            <div *ngIf="password_signup.invalid && password_signup.dirty && password_signup.touched" class="alert alert-danger error-signup">
+              <i class="fa fa-times"></i>
+            </div>
+            <div *ngIf="password_signup.valid && password_signup.dirty && password_signup.touched" class="alert alert-danger error-signup">
+              <i class="fa fa-check"></i>
+            </div>
+            <div id="message">
+              <h3>Password must contain the following:</h3>
+              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+              <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+              <p id="number" class="invalid">A <b>number</b></p>
+              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+            <p>Repeat password</p>
+            <input type="password" class="form-control" name="password_retry" id="password_retry"
+                   [(ngModel)]="registration.password_retry" required #password_retry="ngModel" pattern="password_signup">
+            <div *ngIf="">
+              <i class="fa fa-times"></i>
+            </div>
+            <div *ngIf="" class="alert alert-danger error-signup">
+              <i class="fa fa-check"></i>
+            </div>
+          </div>
+          <input class="btn btn-default" type="submit" value="Sign up" (click)="submitRegistration(authorization)">
+          <i class="fa fa-arrow-right"></i>
+        </form>
+      </div>
+      <div id="footer_signup">
+        <p>By registering, you agree to the <a>User Agreement</a></p>
+      </div>
+    </div>
+    <!-- <div class="form_content">
+         <h3 >Відновлення облікового запису</h3>
+         <div class="form-group">
+             <p>Введіть почтову адресу</p>
+             <input type="email" class="form-control" name="email"
+                    [(ngModel)]="authorization.email" title="email" value="{{authorization?.email}}">
+             <i class="fas fa-envelope"></i>
+         </div>
+         <input class="btn btn-default" type="submit" value="Відновити пароль" (click)="submit(authorization)">
+     </div>-->
+  </div>
+</section>

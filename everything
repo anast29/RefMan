@@ -1,0 +1,227 @@
+@media only screen and (max-width: 800px) {
+    nav {
+        display: none;
+    }
+    #mobile_nav {
+        display: block;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #mobile_nav label {
+        display: inline-block;
+        transition: 600ms;
+        cursor: pointer;
+        font-size: 30px;
+        color: #e0e0e0;
+    }
+    nav label:hover {
+        color: white;
+    }
+
+    #mobile_menu {
+        display: block;
+        box-sizing: border-box;
+    }
+    #mobile_menu ul {
+        display: block;
+        list-style: none;
+        text-align: right;
+    }
+
+    #mobile_menu ul li {
+        display: inline-block;
+        cursor: pointer;
+    }
+    #mobile_menu li:first-child {
+        border-right: 1px solid white;
+    }
+    #mobile_menu li:first-child:hover {
+        border-right: 1px solid white;
+    }
+    #mobile_menu li a{
+        display: inline-block;
+        color: #e0e0e0;
+        font-size: 18px;
+        font-family:  Verdana,Arial, monospace;
+        font-variant: petite-caps;
+
+    }
+    #mobile_menu li a span{
+        font-size: 14px;
+        font-family:  Verdana,Arial, monospace;
+        font-variant: petite-caps;
+    }
+    #mobile_menu li:last-child:hover > a{
+        color: #999999;
+    }
+
+    input[type="checkbox"]:checked ~ #back_menu {
+        display: block;
+    }
+    input[type="checkbox"]:checked ~ #mobile_menu {
+        display: block;
+    }
+
+    #home{
+        display: none;
+    }
+    #mobile_info {
+        display: block;
+        width: 100%;
+        margin: 35% auto;
+        padding: 0 3%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    #mobile_info h2{
+        font-family:  Verdana,Arial, monospace;
+        font-variant: small-caps;
+    }
+    #mobile_info p{
+        font-family:  Verdana,Arial, monospace;
+        font-variant: small-caps;
+        line-height: 1.75em;
+    }
+    #mobile_info a{
+        font-size: 16px;
+    }
+    #mobile_info .registration{
+        display: inline-block;
+        width: 15%;
+        padding:0.5em;
+        font-size: 16px;
+    }
+    #about{
+        display: none;
+    }
+    #mobile_about{
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding: 4% 1%;
+        text-align: center;
+        background: rgba(252,252,252,0.9);
+        box-sizing: border-box;
+    }
+    #mobile_about h2{
+        color: #2a2a2a;
+        font-family:  Verdana,Arial, monospace;
+        font-variant: all-small-caps;
+    }
+    #mobile_about h2:after,#mobile_content legend:after{
+        display: block;
+        margin-bottom: 2%;
+        font-family: FontAwesome, serif ;
+        content: "\f107";
+        color:#201a19;
+        font-style: normal;
+        font-size: 30px;
+    }
+    #mobile_about ul li{
+        display: inline-block;
+        padding: 0 0.5em;
+        text-align: center;
+        vertical-align: top;
+    }
+    img{
+        width: 50%;
+    }
+    #mobile_about ul li p{
+        font-family: Verdana,Arial, monospace;
+        font-variant: all-small-caps;
+        color:#201a19;
+        font-size: 12px;
+    }
+    #content{
+        display: none;
+    }
+    #mobile_content{
+        display: block;
+        margin: 5% auto;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    #mobile_content legend{
+        color: white;
+        font-family:Verdana,Arial, serif;
+        font-variant: all-small-caps;
+        font-weight: 600;
+        font-size: 25px;
+        text-align: center;
+    }
+    #mobile_content legend:after{
+        color: white;
+        padding: 0;
+    }
+    #mobile_content fieldset{
+        display:inline-block;
+        width:90%;
+        margin: 5% auto;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    #mobile_content a{
+        display: block;
+        font-size: 14px;
+        font-family: Verdana,Arial, monospace;
+        font-variant: small-caps;
+        color:#e0e0e0;
+        line-height: 1.75em;
+        text-decoration: none;
+    }
+    #footer{
+        display:none;
+    }
+    #mobile_footer{
+        display: block;
+        width: 100%;
+        height: 15%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    #mobile_footer a{
+        display: inline-block;
+        padding:2%;
+        font-family:Verdan,Arial,monospace;
+        font-variant: small-caps;
+        font-size: 13px;
+        color:#e0e0e0;
+        cursor: pointer;
+    }
+    #mobile_footer a:hover{
+        color:#999999;
+    }
+    #copyright{
+        display:none;
+    }
+    #mobile_copyright{
+        display:block;
+        box-sizing: border-box;
+    }
+    #mobile_copyright span{
+        font-size: 12px;
+        color:white;
+        font-family:Verdan,Arial,monospace;
+        font-variant: small-caps;
+    }
+
+}
+.ngdialog-content{
+    background: none !important;
+    height: 100%;
+
+}
+
+ <nav id="mobile_nav">
+    <ul id="mobile_menu">
+      <li><a><i class="fa fa-user"></i></a></li>
+      <li><a ng-click=""><i class="fa fa-globe"></i><span> uk</span></a></li>
+    </ul>
+  </nav>
+  <div id="mobile_info">
+    <h2>ONAFT Reference Manager</h2>
+    <p> Обліковий запис <strong><a class="onaft" href="http://kci.onaft.edu.ua/" target="_blank">#CenSciONAFT</a> <a class="onaft" href="http://www.library.onaft.edu.ua/" target="_blank">#Lib Reference Manager</a></strong> - ваша точка взаємодії з науковими виданнями Одеської націанальної академії харчових технологій.</p>
+    <a class="registration"><i class="fa fa-user-plus"></i></a>
+  </div>
+

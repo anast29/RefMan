@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700|Open+Sans:300,600,800');
+#main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 3% 0;
+    width: 100%;
+    overflow:hidden;
+    box-sizing: border-box;
+    background: linear-gradient(white,snow);
+}
+#main_paper{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 3% 0;
+    width: 100%;
+    overflow:hidden;
+    box-sizing: border-box;
+    background: linear-gradient(white,snow);
+}
+header{
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+header p{
+    display: block;
+    margin: 1% auto;
+    width: 700px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color:#85858c;
+    letter-spacing: 0.08em;
+    line-height: 1.5em;
+}
+h1{
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+/*author info for foodsience-author*/
+.foodscience_author_info{
+    display: block;
+    padding: 0 5% 5%;
+    margin: 3% auto;
+    width: 85%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+}
+.background{
+    position: relative;
+    background: white;
+    margin: -3% 0;
+}
+.background_btn{
+    width: 450px;
+    position: relative;
+    background: white;
+    margin: 0 auto -10%;
+}
+
+.foodscience_author{
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    /*box-shadow:2px 0 2px #dcdcdc ;*/
+    text-align: left;
+    box-sizing: border-box;
+}
+#content_for_authors{
+    transition: 600ms;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+:host ::ng-deep .title{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background: rgba(133, 133, 140,0.3);
+    height: 30px;
+    padding: 0.5em;
+}
+:host ::ng-deep a{
+    transition: 600ms;
+    position: absolute;
+    display: inline-block;
+    right:0;
+    top: 0;
+    padding: 2px 10px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: baseline;
+    font-size: 30px;
+}
+:host ::ng-deep a:hover{
+    color: #c02122;
+}
+:host ::ng-deep h2{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    vertical-align: baseline;
+    font-size: 20px;
+}
+#next{
+    position: relative;
+    display: block;
+    padding: 1.2em 3.5em 1.2em 1em;
+    transition: 600ms;
+    outline: none;
+    margin: 0 auto;
+    width: 240px;
+    background: #c02122;
+    border: 0;
+    border-radius: 100px;
+    box-shadow: 1px 2px 5px #111111;
+    color: #e4e4e4;
+    font-size: 18px;
+    font-weight: 300;
+    font-family:  "Open Sans", sans-serif;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.arrow_next{
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+:host ::ng-deep .author,.author{
+    display: block;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:host ::ng-deep h4,
+.foodscience_author h4{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: #333;
+    font-weight: lighter;
+    letter-spacing: 0.06em;
+}
+:host ::ng-deep p,
+.foodscience_author p{
+    display: inline-block;
+    margin-right: 3%;
+    width: 25%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color:#85858c;
+    font-weight: normal;
+    letter-spacing: 0.06em;
+}
+:host ::ng-deep input,
+.foodscience_author input[type="text"],
+.foodscience_author input[type="tel"],
+.foodscience_author input[type="email"]
+{
+    transition: 600ms;
+    display: inline-block;
+    margin-right: 3%;
+    width: 25%;
+    padding: 10px;
+    outline: none;
+    background: none;
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-family: helveticaneuecyrroman, sans-serif;
+    font-size:15px;
+}
+#creat_author{
+    position: relative;
+    display: block;
+    padding: 1.25em 1em 1.25em 4.2em;
+    border-radius: 100px;
+    margin: 2% 0;
+    width:220px;
+    transition: 600ms;
+    outline: none;
+    background: #111111;
+    border: 0;
+    color: #e4e4e4;
+    box-shadow: 1px 2px 5px #111111;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+}
+#creat_author:hover{
+    padding: 1.25em 4.2em 1.25em 1em;
+    background: #c02124;
+}
+.plus_author{
+    transition: 700ms;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #c02122;
+    padding: 15px 15px;
+    border-radius: 100px;
+}
+#creat_author:hover > .plus_author {
+    margin-left: 9.75em;
+}
+.foodscience_author sup{
+    color: #c02122;
+    font-family: helveticaneuecyrroman, sans-serif;
+    font-size: 17px;
+}
+.foodscience_author span{
+    display: inline-block;
+    margin: 3% 0;
+    font-family:"Open Sans", sans-serif;
+    font-size: 17px;
+    color:#85858c;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: 1em;
+}
+:host ::ng-deep .block,
+.block{
+    display:block;
+    margin: 0;
+    padding: 0;
+}
+:host ::ng-deep h3{
+    display: inline-block;
+    width: 25%;
+    margin-right: 3%;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: #333;
+    font-weight: lighter;
+    letter-spacing: 0.06em;
+}
+.block h4{
+    display: inline-block;
+    width: 25%;
+    margin-right: 3%;
+    margin-top: 0;
+}
+:host /deep/ .line,.line{
+    display: block;
+    margin: 0;
+    padding: 3% 0;
+    border: 0;
+    border-bottom: 1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+:host /deep/ .bottom_none ,
+.bottom_none{
+    border: 0;
+}
+.science{
+     display: block;
+     margin: 0;
+     padding:0;
+     border: 0;
+ }
+.science h4{
+    padding: 3% 0 0;
+}
+
+
+/*journal info for food-science*/
+.fs_main{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+.tab {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 3% 0;
+    border: 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+#last_tab {
+    border: 0;
+}
+input[type='checkbox'],
+input[type='button']{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.accordion {
+    position: relative;
+    display: block;
+    transition: 600ms;
+    padding: 25px;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    vertical-align: top;
+    background-color: rgba(220, 220, 220,0.2);
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: #333;
+    font-weight: lighter;
+}
+.accordion:hover {
+    background-color: #ccc;
+}
+.accordion:after {
+    position: absolute;
+    right: 20px;
+    padding:0;
+    margin:-0.25em 0;
+    content: "+";
+    font-size: 30px;
+    font-weight: 600;
+    color: #c02122;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+    box-sizing: border-box;
+}
+.accordion_content{
+    width: 100%;
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+    box-sizing: border-box;
+}
+.accordion_content p{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #85858c;
+}
+input[type='checkbox']:checked ~ .accordion_content {
+    max-height: 450px;
+}
+input[type='checkbox']:checked ~ .ref_content {
+    max-height: 1000px;
+}
+.textarea, textarea{
+    transition: 600ms;
+    display: block;
+    outline: none;
+    margin: 3% 0 0;
+    padding: 1%;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #dcdcdc;
+    background: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    resize: none;
+    font-family: "Times New Roman",sans-serif;
+    font-size:10pt;
+}
+#udc{
+    margin: 2% 0 ;
+}
+.textarea:focus{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.textarea /deep/ p{
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    font-family: "Times New Roman", sans-serif !important;
+    font-size: 10pt !important;
+    color: black !important;
+    font-weight: normal !important;
+}
+.fs_title{
+    font-family: "Times New Roman",sans-serif;
+    font-size:14pt;
+    margin: 2% 0 ;
+    text-transform: uppercase;
+    font-weight: bolder;
+    height: 50px;
+}
+#udc{
+    height: 50px;
+}
+input[type="checkbox"]:checked + label::after{
+    transform: rotate(315deg);
+}
+.info{
+    display: inline-block;
+    margin: 2% 0;
+    padding: 0;
+    width: 92%;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: justify;
+}
+.info p{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #85858c;
+    font-weight: lighter;
+    width: 100%;
+}
+.img_align{
+    display: inline-block;
+    margin: 2% 1%;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+#complite{
+    position: relative;
+    display: block;
+    padding: 1.25em 1em 1.25em 4.2em;
+    border-radius: 100px;
+    margin: 2% auto;
+    width:255px;
+    transition: 600ms;
+    outline: none;
+    background: #111111;
+    border: 0;
+    color: #e4e4e4;
+    box-shadow: 1px 2px 5px #111111;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#complite:hover{
+    padding: 1.25em 4.2em 1.25em 1em;
+    background: #2196F3;
+    /*padding-left: 11em;*/
+}
+
+.check{
+    transition: 700ms;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    background: #2196F3;
+    padding: 15px 15px;
+    border-radius: 100px;
+}
+#complite:hover > .check {
+    margin-left: 12.25em;
+}
+.panel_text{
+    display: inline-block;
+    margin-bottom: 4%;
+    margin-right: 10px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+.last_panel{
+    margin-right: 0;
+    vertical-align: middle;
+}
+.panel_content{
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin-bottom: 5%;
+    height: 22px;
+}
+.panel_content:after{
+    display: inline-block;
+    content: "";
+    background: #e4e4e4;
+    width: 1px;
+    height: 22px;
+    margin: 0 ;
+}
+.panel_content label, .panel_text label{
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    cursor: pointer;
+}
+.panel_content label,
+.panel_img {
+   vertical-align: center;
+    text-align: center;
+    padding: 3px 5px;
+}
+.panel_content i{
+    font-size: 16px;
+    z-index: 1;
+}
+.panel_content input[type='checkbox']:checked + label,
+#table:checked + label, #image:checked + label{
+    background: #e4e4e4;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 1px #111111;
+}
+
+.panel_text i.fa-image,
+.panel_content i.fa-list-ol,
+.panel_content i.fa-list-ul,
+.panel_content i.fa-indent,
+.panel_content i.fa-outdent{
+    font-size: 17px;
+}
+.panel_text i.fa-table{
+    font-size: 19px;
+}
+/*.latex{*/
+    /*display: inline-block;*/
+    /*box-sizing: border-box;*/
+    /*vertical-align: top;*/
+    /*cursor: pointer;*/
+    /*border-radius: 5px;*/
+/*}*/
+
+/*.panel_content img,.panel_text img{*/
+     /*display: inline-block;*/
+     /*box-sizing: border-box;*/
+     /*vertical-align: top;*/
+     /*cursor: pointer;*/
+     /*border-radius: 5px;*/
+ /*}*/
+
+
+.text_style{
+    padding: 5px 20px 5px 10px;
+    margin: 0;
+    width: auto;
+    font-size:12px;
+    background: url('../../assets/img/arrow.png') no-repeat right 5px center;
+    background-size: 10px;
+}
+#table_select {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: baseline;
+    position: absolute;
+    transition: 600ms;
+    margin-top: 3%;
+    left: 55%;
+    padding: 5px 20px;
+    background: #e4e4e4;
+    box-shadow: 1px 2px 5px #111111;
+    border-radius: 5px;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    overflow: hidden;
+}
+#table_select:before{
+    transition: 600ms;
+    top: -10px;
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: white;
+    transform: rotate(-45deg);
+    box-shadow: 1px 2px 5px #111111;
+}
+.table_block{
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: baseline;
+    width: 100%;
+}
+
+#table_select p{
+    width: 70%;
+    font-size: 12px;
+}
+#table_select input{
+    width: 30%;
+    height: 20px;
+    border: 1px solid #85858c;
+    border-radius: 3px;
+}
+.edit_table{
+    display: flex;
+}
+select{
+    position: relative;
+    transition: 600ms;
+    display: inline-block;
+    padding: 10px 30px 10px 10px;
+    margin-top: 3%;
+    margin-right: 2%;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: helveticaneuecyrroman, sans-serif;
+    font-size:15px;
+    width: 35%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../../assets/img/arrow.png') no-repeat right 10px center;
+}
+#num_athr{
+    width: 15%;
+}
+.library{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+.book /deep/ .library_content{
+    display: flex;
+    flex-flow: column wrap;
+    align-items:center;
+    justify-content: flex-start;
+    width: 100%;
+}
+:host /deep/ .block_library,
+:host /deep/ series{
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: flex-start;
+    width: 100%;
+}
+.block_library /deep/ p{
+    width: 23%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin: 0 0 0.5em 0;
+}
+
+.block_library /deep/ input{
+    width: 23%;
+    margin: 0 0 0.5em 0;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 10pt;
+}
+
+:host /deep/ #book{
+    transition: 600ms;
+    display: none;
+    margin-top: 1em;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: start;
+}
+#add_reference{
+    position: relative;
+    float: left;
+    display: none;
+    padding: 15px 10px ;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    width: 200px;
+    transition: 600ms;
+    outline: none;
+    background: #2196F3;
+    border: 0;
+    color: white;
+    box-shadow: 1px 1px 3px #111111;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+}
+i.fa-plus{
+    font-size: 18px;
+}
+
+#language{
+    position: relative;
+    display: inline-block;
+    padding: 15px 10px ;
+    margin-top: 2%;
+    width: 25%;
+    margin-bottom: 3%;
+}

@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700|Open+Sans:300,600,800');
+#header{
+    width: 100%;
+    height: 85px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+/*Add menu for desktop*/
+#nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    background: #0e0e0f;
+    box-shadow: 10px 0 4px #111111;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#nav ul {
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    list-style: none;
+    line-height: 0;
+    box-sizing: border-box;
+}
+#nav ul li{
+    display: inline-block;
+    vertical-align: middle;
+    list-style: none;
+    line-height: 0;
+    padding: 50px 20px 0;
+}
+#nav ul li a{
+    transition: 600ms;
+    font-size: 13px;
+    font-family: Verdana, Arial, monospace;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+    cursor:pointer;
+    color: white;
+    letter-spacing: 0.08em;
+}
+
+#user_info{
+    position: absolute;
+    right: 75px;
+    bottom: 15px;
+    font-size: 13px;
+    font-family: Verdana, Arial, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    vertical-align: top;
+}
+#exit{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 35px 20px 35px;
+    background: rgba(51, 51, 51,0.4);
+    font-size: 13px;
+    font-family: Verdana, Arial, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    vertical-align: top;
+}
+#user_info img{
+    vertical-align: middle;
+    border-radius: 100%;
+    border: 2px solid #c02122;
+    object-fit: cover;
+}
+
+/*#header nav ul li ul li {*/
+   /*align-items: flex-end;*/
+/*}*/
+/*#header nav ul li ul li a{*/
+    /*transition: 600ms;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-weight: 300;*/
+    /*font-size: 14px;*/
+    /*text-decoration: none;*/
+    /*cursor:pointer;*/
+    /*color: #e4e4e4;*/
+    /*letter-spacing: 0.08em;*/
+/*}*/
+
+/*#header nav ul li ul {*/
+    /*position: absolute;*/
+    /*display: none;*/
+    /*list-style: none;*/
+    /*right: 0;*/
+    /*padding: 0;*/
+    /*margin-top: 3.5em;*/
+    /*background: #111111;*/
+/*}*/
+/*#header nav ul li ul li{*/
+    /*transition: 600ms;*/
+    /*display: block;*/
+    /*line-height: 0.5em;*/
+    /*padding: 0.85em;*/
+    /*cursor: pointer;*/
+/*}*/
+/*#header nav ul li ul li img{*/
+    /*display: inline-block;*/
+    /*padding:0;*/
+    /*margin: 0;*/
+    /*float: left;*/
+/*}*/
+/*#header nav ul li ul li:hover{*/
+    /*background: rgba(255, 255, 255,0.1);*/
+/*}*/
+/*#header nav ul li:hover > ul{*/
+    /*display: block;*/
+/*}*/
+#main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 4% 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    clear:both;
+    background: linear-gradient(white,snow);
+}
+.papers_info{
+    display: block;
+    padding: 0;
+    margin: 5% auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.papers_info_edit{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 5% auto;
+    width:70%;
+    height: 100%;
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.papers_line{
+    flex: 1;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.papers_line h3{
+    padding: 1%;
+    margin: 0;
+    font-family:'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #333333;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+}
+.papers_line img{
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+#papers{
+    margin: 0 auto;
+    padding: 3% 0;
+    width: 100%;
+    height: 75%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+#papers p{
+    font-family:'Open Sans', sans-serif;
+    font-size: 15px;
+    color:#85858c;
+    letter-spacing: 0.06em;
+    line-height: 1.5em;
+}
+#papers button{
+    display: block;
+    margin: 2% auto;
+    transition: 600ms;
+    outline: none;
+    background: #c02122;
+    border: 0;
+    border-radius: 5px;
+    color: #e4e4e4;
+    box-shadow: 1px 2px 5px #111111;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    padding: 1em 1em 1em 2em;
+    width:250px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+}
+
+#new_papers{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    border: 0;
+    border-bottom: 1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+#new_papers p{
+    display: inline-block;
+    padding: 0 1%;
+    margin: 1% 0;
+    width: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color:#333333;
+    letter-spacing: 0.05em;
+    line-height: 1em;
+    border-right: 1px solid #e4e4e4;
+}
+#new_papers{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    border: 0;
+    border-bottom: 1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+#info_papers{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    border: 0;
+    border-bottom: 1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+#info_papers p{
+    display: inline-block;
+    padding: 0 1%;
+    margin: 1% 0;
+    width: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    line-height: 1em;
+}
+#info_papers img{
+    display: inline-block;
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+#papers_edit{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 75%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+.accordion {
+    position: relative;
+    display: block;
+    transition: 600ms;
+    padding: 2%;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    vertical-align: top;
+    background-color: rgba(220, 220, 220,0.2);
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: #333;
+    font-weight: lighter;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion a{
+    transition: 600ms;
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    align-self: center;
+}
+.accordion a:last-child{
+    right: 45px;
+
+}
+.accordion a:hover{
+    transform: scale(1.05);
+}
+
+.accordion_content{
+    display: flex;
+    flex-flow:  column wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 400px;
+    padding:0;
+    margin: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+    box-sizing: border-box;
+    border: 1px solid rgba(220, 220, 220,0.2);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.text{
+    display: flex;
+    flex-flow:  row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+#format{
+    display: flex;
+    flex-flow:  row nowrap;
+    justify-content: end;
+    align-items: center;
+}
+.text:last-child{
+    padding-bottom: 20px;
+}
+.text p{
+    padding: 10px 20px 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #85858c;
+    line-height: 2em;
+    letter-spacing: 0.08em;
+}
+.text p:first-child{
+    padding-top: 20px ;
+}
+.text h4{
+    padding: 10px 20px 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color:#0e0e0f;
+    line-height: 1.25em;
+    letter-spacing: 0.08em;
+}
+.text h4:first-child{
+    padding-top: 20px ;
+}
+#format{
+    cursor: pointer;
+}
