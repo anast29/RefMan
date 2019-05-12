@@ -28,7 +28,8 @@
             <img src="../../assets/img/lock.png" class="log">
           </div>
           <div class="form-group">
-            <input class="btn btn-default" type="submit" value="Sign in" [disabled]="myForm.invalid" (click)="submitAuthorization(authorization)">
+            <input class="btn btn-default" type="submit" value="Sign in" [disabled]="myForm.invalid" >
+            <!--(click)="submitAuthorization(authorization)"-->
             <!--"(click)="submit(authorization)-->
             <i class="fa fa-arrow-right"></i>
             <a>Forgot password?</a>
@@ -81,7 +82,8 @@
               <i class="fa fa-check"></i>
             </div>
           </div>
-          <input class="btn btn-default" type="submit" value="Sign up" (click)="submitRegistration(authorization)">
+          <input class="btn btn-default" type="submit" value="Sign up" >
+          <!--(click)="submitRegistration(authorization)"-->
           <i class="fa fa-arrow-right"></i>
         </form>
       </div>

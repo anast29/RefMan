@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import $ = require('jquery');
+import * as $ from 'jquery';
 
 @Component({
     selector: 'app-refmanager-header-ua',
@@ -7,7 +7,6 @@ import $ = require('jquery');
     styleUrls: ['./refmanager-ua.component.css']
 })
 export class RefmanagerHeaderUaComponent implements OnInit {
-    private QueryLoader: any;
     constructor() { }
 
     ngOnInit() {
@@ -22,7 +21,7 @@ export class RefmanagerHeaderUaComponent implements OnInit {
             function toggleHandler(toggle) {
                 toggle.addEventListener('click', function (e) {
                     e.preventDefault();
-                    (this.classList.contains('is-active') === true) ? this.classList.remove('is-active') : this.classList.add("is-active");
+                    (this.classList.contains('is-active') === true) ? this.classList.remove('is-active') : this.classList.add('is-active');
                 });
             }
 

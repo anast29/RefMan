@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import $ = require('jquery');
+import * as $ from 'jquery';
 @Component({
     selector: 'app-refmanager-header-en',
     templateUrl: './refmanager-header-en.component.html',

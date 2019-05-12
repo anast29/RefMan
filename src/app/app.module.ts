@@ -22,7 +22,7 @@ import { AuthorizationEnComponent } from './authorization-en/authorization-en.co
 import {ProfileEditComponent} from './profile/profile-edit.component';
 import {ArticleTableComponent} from './articles/article-table.component';
 import { ProfileEnComponent } from './profile-en/profile-en.component';
-import {CKEditorComponent} from 'ng2-ckeditor';
+// import {CKEditorComponent, CKEditorModule} from 'ng2-ckeditor';
 
 const routes = [
     {path: 'login', children: [{
@@ -101,8 +101,8 @@ const routes = [
         AuthorizationEnComponent,
         ProfileEditComponent,
         ArticleTableComponent,
-        ProfileEnComponent,
-        CKEditorComponent
+        ProfileEnComponent
+        // CKEditorComponent
     ],
     imports: [
         BrowserModule,
