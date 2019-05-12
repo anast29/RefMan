@@ -382,7 +382,7 @@ export class FoodscienceUaComponent implements OnInit {
                 counter++;
 
             };
-        };
+        });
     }
 }
 
