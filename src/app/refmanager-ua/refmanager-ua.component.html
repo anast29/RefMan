@@ -3,19 +3,19 @@
     <section id="about">
       <div class="img_content">
         <div class="img">
-          <img src="../../assets/img/about/gram.png">
+          <img src="assets/img/about/gram.png">
         </div>
         <div class="img">
-          <img src="../../assets/img/about/pen.png">
+          <img src="assets/img/about/pen.png">
         </div>
         <div class="img">
-          <img src="../../assets/img/about/collab.png">
+          <img src="assets/img/about/collab.png">
         </div>
         <div class="img">
-          <img src="../../assets/img/about/exp.png">
+          <img src="assets/img/about/exp.png">
         </div>
         <div class="img">
-          <img src="../../assets/img/about/brainstorm.png">
+          <img src="assets/img/about/brainstorm.png">
         </div>
         <div class="line"></div>
       </div>
@@ -101,19 +101,44 @@
           Холодильна техніка та технологія</a>
       </div>
     </section>
+    <section id="send-form">
+      <div class="row" style="width: 100%;">
+        <div class="about-info">
+          <h2>Віртуальна довідка</h2>
+          <p>
+            Якщо у вас виникли питання, зауваження та пропозиції, звертайтесь за наведенною формою до адміністраторів сайту.
+          </p>
+        </div>
+        <div class="about-form">
+          <form >
+            <div class="input-group">
+              <input [formControl]="user" id="user_name" type="text" class="form-control"  placeholder="Ваше ім'я">
+              <div class="input-group-append">
+              </div>
+            </div>
+            <div class="input-group">
+              <textarea id="text" class="form-control" aria-label="With textarea"  placeholder="Ваше повідомлення"></textarea>
+            </div>
+            <div class="background_btn">
+              <button type="button" id="next" (click)="sendEmail()">Відправити <img class="arrow_next" src="assets/img/next.png"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
     <section id="statistics">
       <div class="img_statistics">
-        <img src="../../assets/img/statistic/avatar.png">
+        <img src="assets/img/statistic/avatar.png">
         <p>Зареєстровані автори</p>
         <h1>1</h1>
       </div>
       <div class="img_statistics">
-        <img src="../../assets/img/statistic/publish.png">
+        <img src="assets/img/statistic/publish.png">
         <p>Створені публікації</p>
         <h1>2</h1>
       </div>
       <div class="img_statistics">
-        <img src="../../assets/img/statistic/magaz.png">
+        <img src="assets/img/statistic/magaz.png">
         <p>Опубліковані роботи</p>
         <h1>0</h1>
       </div>

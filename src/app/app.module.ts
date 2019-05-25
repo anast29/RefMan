@@ -14,7 +14,7 @@ import {RefmanagerFooterUaComponent} from './refmanager-ua/refmanager-footer-ua.
 import {ArticlesHeaderComponent} from './articles/articles-header.component';
 import { FoodscienceUaComponent } from './foodscience-ua/foodscience-ua.component';
 import {FoodscienceAuthorUaComponent} from './foodscience-ua/foodscience-author-ua.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { RefmanagerEnComponent } from './refmanager-en/refmanager-en.component';
 import {RefmanagerHeaderEnComponent} from './refmanager-en/refmanager-header-en.component';
@@ -108,6 +108,7 @@ const routes = [
         BrowserModule,
         HttpClientModule,
         FormsModule,
+        ReactiveFormsModule,
         RouterModule.forRoot(routes),
         RouterModule.forChild(routes),
         NgxMaskModule.forRoot()
